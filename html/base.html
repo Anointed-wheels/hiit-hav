@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="stylesheet" href="../css/query.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+</head>
+<body>
+    <header class="top-nav">
+            <nav class="nav">
+                <div >
+                    <div class="calling-icon tame">
+                        <i id="tint" class="fa-solid fa-bars"></i>
+                    </div>
+                    <!-- <div class="calling-can">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div> -->
+                </div>               
+                <ul class="calling">                    
+                    <li class="about-us" >ABOUT US</li>
+                    <li>CLEANING SEVICES</li>
+                    <li>PEST CONTROL</li>
+                    <li class="our-service">OUR SEVICES</li>
+                    <li>CONTACT US</li>
+                    <li>FAQ</li>
+                </ul>
+                <section class="all">
+                    <div id="title-holder">
+                        <div id="title">
+                            
+                        </div>
+                    </div>
+                </section>
+            </nav> 
+            <p  class="title-call">HARVESTERKEN</p>
+            <p class="prof">Professional cleaning service</p>
+    </header>
+    <body>
+        <section class="navigation">
+            <div class="overlay">
+                <img src="" alt="">
+            </div>
+            <section class="hero-section">
+                <div class="logo-wrapper">
+                    <img src="../images/logo.jpg" alt="">
+                </div>
+                <p class="praise">
+                    Cleaning shouldn't be a chore,<br>
+                    that's why we're a call away, <br>
+                    to sweep you off your feet, every single day. <br>
+                </p>
+                    <div class="contact-btn">                       
+                        <p class="contact ">CONTACT US</p><i class="fa-solid fa-phone"></i>
+                    </div>               
+                <div class="hero-div" >
+                    <img id="hero" class="image" src="../images/a.jpg" alt="images">
+                </div>
+            </section>
+        </section>
+        <section class="trusted ">
+            <div class="gallery-slider-after"></div>
+            <div id="me">
+                <img class="trusted-child " src="../images/sv3.jpg" alt="">
+            </div>
+            <p class="trusted-text">OUR CLIENTS</p>
+            <div class="gallery-container reveal">
+                <div class="gallery-slider">
+                        <img src="../logo-images/call.png" />
+                        <img src="../logo-images/call9.png" alt="">
+                        <img src="../logo-images/call5.png" alt="">
+                        <img src="../logo-images/call6.png" alt="">
+                        <img src="../logo-images/call7.jpg" alt="">
+                        <img src="../logo-images/call8.png" alt="">
+                        <img src="../logo-images/call4.jpg" alt="">
+                        <img src="../logo-images/call3.jpg" />
+                        <img src="../logo-images/call2.png" alt="">
+                        <img src="../logo-images/call19.jpg" alt="">
+                        <img src="../logo-images/call18.png" alt="">
+                        <img src="../logo-images/call17.jpg" alt="">
+                        <img src="../logo-images/call16.jpg" alt="">
+                        <img src="../logo-images/call15.png" alt="">
+                        <img src="../logo-images/call13.png" alt="">
+                        <img src="../logo-images/call12.jpg">
+                        <img src="../logo-images/call14.png" alt="">
+                        <img src="../logo-images/call11.jpg">
+                        <img src="../logo-images/call10.jpg" />
+                        <img src="../logo-images/call1.jpg" />      
+                </div>
+                <div class="gallery-slider">
+                    <img src="../logo-images/call.png" />
+                    <img src="../logo-images/call9.png" alt="">
+                    <img src="../logo-images/call5.png" alt="">
+                    <img src="../logo-images/call6.png" alt="">
+                    <img src="../logo-images/call7.jpg" alt="">
+                    <img src="../logo-images/call8.png" alt="">
+                    <img src="../logo-images/call4.jpg" alt="">
+                    <img src="../logo-images/call3.jpg" />
+                    <img src="../logo-images/call2.png" alt="">
+                    <img src="../logo-images/call19.jpg" alt="">
+                    <img src="../logo-images/call18.png" alt="">
+                    <img src="../logo-images/call17.jpg" alt="">
+                    <img src="../logo-images/call16.jpg" alt="">
+                    <img src="../logo-images/call15.png" alt="">
+                    <img src="../logo-images/call13.png" alt="">
+                    <img src="../logo-images/call12.jpg">
+                    <img src="../logo-images/call14.png" alt="">
+                    <img src="../logo-images/call11.jpg">
+                    <img src="../logo-images/call10.jpg" />
+                    <img src="../logo-images/call1.jpg" />      
+            </div>
+            
+        </section>
+        {% block main %}
+        {% endblock main %}
+    </body>
+    <footer>
+        <section class="footer ">
+            <div class="footer-background"><img src="../images/cicle.jpg" alt=""></div>
+            <div class="footer-div">
+                <div class="twist" id="first">
+                    <a href="index.html"><div class="footer-logo" ><img src="../images/logo.jpg" alt="Harvesterken logo"></div></a>
+                    <div class="instik"><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-tiktok"></i></div>   
+                    <div><p class="copy">
+                        <i class="fa-regular fa-copyright"></i> 20205 ENVIROMENTAL SERVICES, INC.
+                    </p></div>
+                    <p class="copy">All rights reserved</p>                  
+                </div>
+                <div class="twist" id="second">
+                    <p class="column-title">Navigations</p><br>
+                    <p class="navigation-hover about-us">About us</p>
+                    <p class="navigation-hover">Cleaning servicves</p>
+                    <p class="navigation-hover">Pest control</p>
+                    <p class="navigation-hover">Other categories</p>
+                    <p class="navigation-hover"> Contact us</p>
+                    <p class="navigation-hover">FAQ</p>
+                </div>
+                <div class="twist" id="third">
+                    <p class="column-title">Services</p><br> 
+                    <p class="navigation-hover">Professional cleaning</p>
+                    <p class="navigation-hover">Pest control</p>
+                    <p class="navigation-hover">Relocation of properties</p> 
+                    <p class="navigation-hover">House keeping</p>
+                    <p class="navigation-hover">Weed control</p>  
+                </div>
+                <div class="twist" id="fourth">
+                    <p class="column-title">Contact us</p><br>
+                    <p class="navigation-hover">
+                        <i class="fa-solid fa-phone"></i>   (+234)8123456789 <br>
+                    </p>
+                    <p class="navigation-hover">
+                        <i class="fa-solid fa-envelope"></i> abc@gmail. <br>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-location-dot"> </i>Address: Kalejaye Okeitunu <br>
+                    </p>
+                    <p>
+                        Kalejaye, Oke-itunu, Ibadan, Nigeria
+                    </p>
+                </div>
+            </div>
+            <div class="footer-line">
+            </div>
+            <div><button>
+                
+            </button></div>
+        </section>
+    </footer>
+    <script src="../java/index.js"></script>
+</body>
+</html>

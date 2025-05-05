@@ -1,0 +1,312 @@
+@media screen and (max-width: 1024px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: 'bungee';
+        src: url('../fonts/bungee.ttf') ;
+    }
+    @font-face {
+        font-family: 'fred';
+        src: url('../fonts/fredrick.ttf') ;
+    }
+    @font-face {
+        font-family: 'boldon';
+        src: url('../fonts/boldon.ttf');
+    }
+    @font-face {
+        font-family: 'winky';
+        src: url('../fonts/winky.ttf');
+    }
+    @font-face {
+        font-family: 'roboto';
+        src: url('../fonts/roboto.ttf');
+    }
+    @font-face {
+        font-family: "nunito";
+        src: url("../fonts/nunito.ttf");
+    }
+    body{
+        overflow-x: hidden;
+    }
+      
+    .top-nav{
+        position: sticky;
+        top: 0;
+        z-index: 22;
+    }
+    .nav{
+        position: relative;
+        width: 100dvw;
+        height: 10dvh;
+        background-color: rgb(72, 93, 88);       
+        
+    }
+    #hero{
+        opacity: 0.5;
+    }
+    .trusted{
+        position: relative;
+        margin: 0 0;
+        display:grid;
+        height: 17dvh;
+    }
+    .hero-div{
+        width: 100dvw;
+        background-color: #1c312c;
+        height: 30dvh;
+        display: grid;
+    }
+    .image{
+        width: 60%;
+        height: 30dvh;
+        justify-content: center;
+        margin-left: 25%;
+    }
+    .title-call{
+        position: absolute;
+        top: 29px;
+        left: 15px;
+        z-index: 44444;
+        font-family: fred;
+        font-size: 1.3em;
+        color: white;
+        font-weight: 590;
+        
+    }
+    .fa-xmark{
+        position: absolute;
+        right: 10dvw;
+        top: 5dvh;
+        display: flex;
+        /* right: 10vw;
+        top: 5dvh; */
+        color: #dedede;
+        scale: 3;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 10dvw;
+        top: 5dvh;
+        display: flex;
+        color: #dedede;
+        scale: 3;
+    }
+    .calling-icon :hover{
+        cursor: pointer;
+    }
+    #tint{
+        display: hidden;
+    }
+    /* .calling-icon:active{
+        border: 2px solid white;
+        padding: 5px;
+    } */
+    .calling{
+        background-color: #080808;
+        height: 30dvh;
+        display: block;
+        /* display: none; */
+        /* position: absolute; */
+        left: 500px;
+        top: 7dvh;
+        color: white;
+        justify-content: space-around;
+        width: 40vw;
+        font-size: 25px;
+        padding: 0 2dvw;
+        border-radius: 20px;
+    }
+    .tame{
+        text-decoration: none;
+        list-style: none;
+        justify-items: center;
+    }
+    .calling li{
+        margin: 2dvh 0;
+    }
+    .calling li:hover{
+        cursor: pointer;
+    }
+    .calling li:active{
+        border: 4px solid white;
+        padding: 7px;
+    }
+    .prof{
+        position: absolute;
+        top: 54px;
+        left: 15px;
+        font-size: 0.9em;
+        z-index: 44444;
+        color: #ffffff;
+    }
+    .navigation{
+        position: relative;
+        display: flex;
+    }
+    .all{
+        z-index: 33;
+    }
+    #me{
+        width: 100vw;
+        height: 17dvh;
+        position: absolute;
+        margin: 0 0;
+    }
+    .trusted-text{
+        color: #ffffff;
+        display: grid;
+        text-align: center;
+        position: absolute;
+        top: 3dvh;
+        left: 45%;
+        font-weight: bold;
+        font-size: 0.4em;
+    }
+    .trusted-child{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #title{
+        background-color: #40826D;
+        height: 10dvh;
+        width: 26dvw;
+        position: absolute;
+        border-radius: 480px;
+        left: -60px;
+    }
+    #title-holder{
+        background-color: #50C878;
+        height: 10dvh;
+        width: 26dvw;
+        position: absolute;
+        border-radius: 480px;
+        position: absolute;
+    }  
+    @keyframes slide {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+    }
+    .gallery-container:hover .gallery-slider{
+        animation-play-state: paused;
+    }
+    .gallery-container{
+        /* z-index: 999999; */
+        position: absolute;
+        white-space: nowrap;
+        /* padding: 50px; */
+        
+    }
+    .gallery-container::before{
+        position: absolute;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        width: 450px;
+        height: 17dvh;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0), black);
+        content: "";
+    }
+    .gallery-container::after{
+        position: absolute;
+        z-index: 4;
+        top: 0;
+        right: 0;
+        width: 450px;
+        height: 30dvh;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), black);
+        content: "k;k";
+    }
+    
+    .gallery-slider{
+        animation: slide 30s infinite linear;
+        display: inline-block;
+    }
+    .gallery-slider img {
+        height: 100px;
+        width: 100px;
+        margin: 60px 40px 0px 40px;
+        border-radius: 20px;
+    }
+    .btn{
+        position: fixed;
+        z-index: 99999999;
+        right: 5dvw;
+        bottom: 10dvh;
+    }
+    .btn button{
+        height: 60px;
+        width: 60px;
+        background-color: brown;
+        border-radius: 10px;
+        opacity: 0.7;
+        
+    }
+    .btn i{
+        color: #ffffff;
+        scale: 2;
+    }
+    .about{
+        height: 100vh;
+        width: 120dvw;
+        background-color: #f7f7f7;
+        position: relative;
+        margin: 0px;
+    }
+    .about-head{
+        height: 30dvh;
+        width: 100dvw;
+        background-color: #40826D;
+        display: grid;
+        color: white;
+        font-size: 2.5em;
+        font-family: winky;
+        font-weight: bolder;
+    }
+    .about-head p{
+        position: absolute;
+        top: 5dvh;
+        justify-self: center;
+    }
+    .about-text{
+        position:absolute;
+        left: 12dvw;
+        top: 18dvh;
+        height: 102dvh;
+        width: 76vw;
+        background-color: #dedede;
+        z-index: 3;
+        
+    }
+    .blue{
+        margin: 7dvh 0 2dvh 7dvw;
+        color: #0077a2;
+        font-family: boldon;
+    }
+    .red{
+        margin: 20dvh 0 2dvh 7dvw;
+    }
+    .text-child{
+        margin: 0 7dvw;
+        font-family: nunito;
+        overflow: hidden;
+        font-size: 1rem;
+    }
+    .down{
+        margin: 3dvh 7vw 3dvh 7dvw;
+    }
+    /* body{
+        display: none;
+    } */
+}
+@media only screen and (max-height: 768px) {
+    /* Styles for devices with a maximum height of 768px */
+  }
+  
